@@ -6,13 +6,16 @@ jobs:
         steps:
            - name: checkout Repo
              uses: actions/checkout@v6 
-           - name: Welcome message
-             run: echo "My Firset Github Actions"
-             
-           - name: List Files
-             run: ls
 
-           - name: Read files
-             run: cat README.md  
+           - name: List and Read file
+             run: |
+                echo "My Firset Github Actions"
+                ls -ltra
+                cat README.md
+
+           - name: Generate ASCII Artwork
+             run: cowsay -f lion "Run for cover,I am a LION ....ROAR" >> lion.txt   
+             
+           
              
            
