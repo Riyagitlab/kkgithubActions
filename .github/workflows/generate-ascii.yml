@@ -12,8 +12,8 @@ jobs:
 
            - name: Executing shell script
              run: |
-                chmod +x Riyagitlab/kkgithubActions/.github/workflows/ascii-script.sh
-                ./Riyagitlab/kkgithubActions/.github/workflows/ascii-script.sh
+              chmod +x .github/workflows/ascii-script.sh
+              ./.github/workflows/ascii-script.sh
 
 
             
