@@ -4,10 +4,15 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+           - name: checkout Repo
+             uses: actions/checkout@v6 
            - name: Welcome message
              run: echo "My Firset Github Actions"
              
            - name: List Files
              run: ls
+
+           - name: Read files
+             run: cat README.md  
              
            
