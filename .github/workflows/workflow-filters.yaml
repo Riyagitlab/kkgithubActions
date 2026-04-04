@@ -12,8 +12,7 @@ on:
         types:
             - opened
             - closed
-        paths-ignored:
-            - README.md
+       
         branches:
             - main        
         
